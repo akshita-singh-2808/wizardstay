@@ -55,9 +55,6 @@ To set up and run WanderStay locally, follow these steps:
 ## Contributors
 - Akshita Singh
 
-## License
-This project is licensed under the MIT License.
-
 ---
 If you have any questions, feel free to reach out!
 
