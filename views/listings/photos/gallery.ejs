@@ -1,0 +1,27 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="container"> 
+        <form method="POST" action="/Photos">
+            <label for="url">Share your Memories with us...
+                <br>
+                <input  name="imageUrl" id="url"type="text" placeholder="Enter the image URL "  >
+                <button class="btn" type="submit" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; margin-right: 10px; margin-left: 5px;">Submit</button>
+            </label>
+        </form>
+        <br>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+            <% for (let photo of allPhotos) { %>
+                <a class="text" href="/Photos/<%= photo.id %>">
+                <div class="col">
+                    <div class="card" style="width: 100%;">
+                        <img src="<%= photo.imageUrl %>" class="card-img-top" alt="location image">
+                        <div class="card-img-overlay"></div>
+                    </div>
+                </div>
+            </a>
+           
+            <% } %>
+        </div>
+    </div>
+</body>
+

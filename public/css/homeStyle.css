@@ -1,0 +1,141 @@
+body {
+    /* background-color: hsla(0, 0%, 0%, 0.7) !important; */
+    background-color: #5c5552;
+    margin: 0;
+    height: 100vh;
+    /* background-image: url('https://codewithsadee.github.io/tourly/assets/images/hero-banner.jpg'); */
+    background-size: cover;
+    background-position: center; 
+    background-blend-mode: overlay;
+}
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 48px;    
+    font-weight: 800;   
+    
+}
+.slideshow-container{
+    text-align: center;
+    color: white;
+    font-size: 19px;     
+   
+
+}
+.home-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin: 3rem;
+    border-radius: 100px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color:#3943B7 ;
+    color: white;
+    border: none;
+    
+}
+.btn-book{
+    background-color: transparent;
+    border: solid white 2px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.custom-nav-link{
+    color: white !important; 
+    margin-left: 1;
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    margin: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.custom-nav-link:hover{
+    color: #3b79c9 !important;
+}
+
+/* .navbar-collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.custom-navbar{
+    height:5rem;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    /* background-color: hsla(0, 0%, 0%, 0.2) !important;
+    background-blend-mode: overlay;
+    border-bottom: 1px solid hsla(0, 0%, 43%, 0.874) !important; */
+
+}
+.f-info-socials{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0 2rem 0 0; /* Add margin to the right for spacing */
+    gap: 10px; 
+
+}
+.fa-brands{
+    margin: 5px;
+    color: white;
+}
+.header-top{
+   color: white;
+   text-align: center;
+   padding-top: 3.75rem;
+   background-blend-mode: overlay;
+   border-bottom: 1px solid hsla(0, 0%, 43%, 0.874) !important; 
+   display: flex;
+   justify-content: center;
+
+}
+h2{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+.fa-cat{
+    color: white;
+    font-size: 3rem;
+   
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.quote {
+    animation: fadeInScale 1.5s ease-in-out forwards;
+}

@@ -1,0 +1,37 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="newContainer">
+       <form method="POST" action="/listings/<%=listing._id%>?_method=PUT">
+        <h2>Edit Listing</h2>
+        <div>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title:</label>
+                <input type="text" name="title" value="<%= listing.title %>"  class="form-control"  required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description:</label>
+                <br>
+                <textarea id="description" class="form-control"  name="description" rows="4" required><%= listing.description %></textarea>
+            </div>
+            
+            <div class="mb-3"> 
+                <label for="price" class="form-label">Price:</label>
+             <input type="number" name="price" class="form-control"  value="<%= listing.price %>" required></div>
+
+            <div class="mb-3"> 
+                <label for="location" class="form-label">Location:</label>
+                <input type="text" name="location" class="form-control"  value="<%= listing.location %>" required></div>
+
+            <div class="mb-3">
+                 <label for="country" class="form-label">Country:</label>
+                <input type="text" name="country" class="form-control"  value="<%= listing.country %>" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Update
+            </button>
+        </div>
+    </form>
+    </div>
+    
+</body>
+

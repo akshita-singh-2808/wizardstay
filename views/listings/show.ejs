@@ -1,0 +1,91 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+   <div class="id-detail">
+      <h4><%= listing.title %></h4>
+      <div>
+         <div style="width: 40rem;">
+            <img src="<%= listing.image.url %>" class="card-img-top" alt="location image">
+            
+            <div class="id-list">
+               <ul>
+                  <li><%= listing.description %></li>
+                  <li><%= listing.price %></li>
+                  <li><%= listing.location %></li>
+                  <li><%= listing.country %></li>
+
+               </ul>
+               <p style="font-style:italic;">Owned By <%= listing.owner?.username%></p>
+            </div>
+
+            <% if (currUser && currUser._id.toString() === listing.owner._id.toString()) { %>
+               <div class="id-btn">
+                  <form method="GET" action="/listings/<%= listing._id %>/edit">
+                     <button type="submit" class="edit-btn" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">EDIT</button>
+                  </form>
+                  <form method="POST" action="/listings/<%= listing._id %>/?_method=DELETE">
+                     <button type="submit" class="btn" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">DELETE</button>
+                  </form>
+               </div>
+            <% } %>
+            
+
+            <hr>
+          <% if(currUser){  %>
+            <div class="col-10 offset-1">
+               <h4>Leave a review</h4>
+               <form method="POST" action="/listings/<%= listing.id %>/reviews/" novalidate class="needs-validation">
+                  <div class="mb-3 mt-3">
+                     <label class="form-label" for="rating">Rating</label>
+                     <input class="form-range" type="range" min="1" max="5" id="rating" name="review[rating]">
+                  </div>
+                  <div class="mb-3 mt-3">
+                     <label class="form-label" for="comment">Comments</label>
+                     <textarea class="form-control" name="review[comment]" id="comment" cols="30" rows="5" required></textarea>
+                     <div class="invalid-feedback">Please submit some comments for review</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">SUBMIT</button>
+               </form>
+           <% }%>
+               <hr>
+               
+               <h4>Reviews</h4>
+               
+               <div class="row row-cols-1 row-cols-md-2 g-2">
+                   <% if (listing.reviews.length > 0) { %>
+                       <% for (let review of listing.reviews) { %>
+                           <div class="col">
+                               <div class="card" style="padding: 0.5rem; min-height: auto;">
+                                   <div class="card-body" style="padding: 0.5rem;">
+                                       <h6 class="card-title" style="margin-bottom: 0.3rem;"> <%= review.author?.username%></h6>
+                                       <p style="margin-bottom: 0.3rem;"><%= review.comment %></p>
+                                       <p class="card-text" style="margin-bottom: 0.3rem; font-size: 0.9rem;">
+                                           <%= review.rating %> ★
+
+                                       </p>
+                                       
+                                       <form method="POST" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
+                                           <button class="btn btn-sm btn-drk" type="submit">Delete</button>
+                                       </form>
+                                   </div>
+                               </div>
+                           </div>
+                       <% } %>
+                   <% } else { %>
+                       <p class="text-muted">No reviews yet.</p>
+                       <div style="height: 50px;"></div> <!-- Adds extra space when no reviews -->
+                   <% } %>
+               </div>
+               
+               
+               
+               
+
+            </div>
+            
+      
+         
+         
+      </div>
+   </div>
+   
+</body>

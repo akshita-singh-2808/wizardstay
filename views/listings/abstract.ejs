@@ -1,0 +1,183 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div>
+        <h1>Airbnb Clone Core Functionalities</h1>
+        <p>
+            These are the core functionalities that mimic the basic Airbnb experience:
+        </p>
+
+        <h2>1. User Authentication</h2>
+        <ul>
+            <li>Sign-up/Sign-in using email/password or social logins (Google, Facebook).</li>
+            <li>Differentiate user roles: Hosts (property owners) and Guests (renters).</li>
+            <li>Password reset via email or OTP.</li>
+        </ul>
+
+        <h2>2. Listings</h2>
+        <ul>
+            <li>Property listings: Create, view, update, and delete.</li>
+            <li>Fields include:
+                <ul>
+                    <li>Title</li>
+                    <li>Description</li>
+                    <li>Address</li>
+                    <li>Price per night</li>
+                    <li>Number of guests</li>
+                    <li>Amenities (e.g., Wi-Fi, pool)</li>
+                    <li>Photos (image upload feature)</li>
+                </ul>
+            </li>
+            <li>Filters and search functionality:
+                <ul>
+                    <li>Location</li>
+                    <li>Price range</li>
+                    <li>Date availability</li>
+                    <li>Number of guests</li>
+                    <li>Property type (e.g., apartment, house)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>3. Booking System</h2>
+        <ul>
+            <li>Availability calendar for hosts to mark dates as available/unavailable.</li>
+            <li>Booking form for guests to select dates, number of guests, etc.</li>
+            <li>Booking summary with details before confirmation.</li>
+            <li>Real-time validation to ensure property availability.</li>
+        </ul>
+
+        <h2>4. Payment Integration</h2>
+        <ul>
+            <li>Implement payment gateways (e.g., Stripe, PayPal).</li>
+            <li>Show breakdown of costs (base price, service fees, taxes).</li>
+            <li>Allow secure payments and issue receipts.</li>
+        </ul>
+
+        <h2>5. User Profiles</h2>
+        <ul>
+            <li><strong>Guests:</strong>
+                <ul>
+                    <li>Personal info (name, profile picture, bio).</li>
+                    <li>Booking history.</li>
+                </ul>
+            </li>
+            <li><strong>Hosts:</strong>
+                <ul>
+                    <li>Property management (listings created by the host).</li>
+                    <li>Earnings dashboard.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>6. Reviews and Ratings</h2>
+        <ul>
+            <li>Guests can leave reviews and ratings for hosts.</li>
+            <li>Hosts can review guests.</li>
+            <li>Display average ratings and reviews for properties.</li>
+        </ul>
+
+        <h2>7. Responsive Design</h2>
+        <ul>
+            <li>Ensure the site works seamlessly on desktop, tablet, and mobile devices.</li>
+        </ul>
+
+        <h1>Advanced Features</h1>
+        <p>For a more comprehensive and realistic Airbnb clone, consider adding the following:</p>
+
+        <h2>1. Map Integration</h2>
+        <ul>
+            <li>Use APIs like Google Maps or Mapbox to show property locations on an interactive map.</li>
+            <li>Allow users to filter and select properties directly on the map.</li>
+        </ul>
+
+        <h2>2. Dynamic Pricing</h2>
+        <ul>
+            <li>Hosts can set seasonal pricing or discounts for long-term bookings.</li>
+        </ul>
+
+        <h2>3. Messaging System</h2>
+        <ul>
+            <li>Built-in chat feature for hosts and guests to communicate before bookings.</li>
+        </ul>
+
+        <h2>4. Wishlist</h2>
+        <ul>
+            <li>Guests can save favorite properties to a personal wishlist.</li>
+        </ul>
+
+        <h2>5. Notifications</h2>
+        <ul>
+            <li>Email and in-app notifications for booking confirmations, reminders, and messages.</li>
+        </ul>
+
+        <h2>6. Admin Panel</h2>
+        <ul>
+            <li>Manage users, bookings, disputes, and reported listings.</li>
+            <li>Analytics on user engagement, revenue, etc.</li>
+        </ul>
+
+        <h2>7. Multilingual and Multi-Currency Support</h2>
+        <ul>
+            <li>Allow users to view the site in their preferred language and currency.</li>
+        </ul>
+
+        <h2>8. Social Sharing</h2>
+        <ul>
+            <li>Enable users to share listings on social media platforms.</li>
+        </ul>
+
+        <h2>9. Property Verification</h2>
+        <ul>
+            <li>Allow hosts to upload verification documents, which admins can approve.</li>
+        </ul>
+
+        <h2>10. Mobile App</h2>
+        <ul>
+            <li>Create a mobile version of your site for better accessibility.</li>
+        </ul>
+
+        <h1>Tech Stack Recommendations</h1>
+        <h2>Frontend</h2>
+        <ul>
+            <li>HTML/CSS/JavaScript for structure and styling.</li>
+            <li>Frameworks: React, Vue, or Angular.</li>
+            <li>UI libraries: Material-UI, Tailwind CSS, or Bootstrap.</li>
+        </ul>
+
+        <h2>Backend</h2>
+        <ul>
+            <li>Node.js with Express (or another framework like Django or Ruby on Rails).</li>
+            <li>RESTful API or GraphQL for communication between frontend and backend.</li>
+        </ul>
+
+        <h2>Database</h2>
+        <ul>
+            <li>Relational (PostgreSQL, MySQL) or NoSQL (MongoDB).</li>
+            <li>Use a database schema for users, bookings, listings, etc.</li>
+        </ul>
+
+        <h2>Storage</h2>
+        <ul>
+            <li>For images and files: AWS S3, Firebase Storage, or Cloudinary.</li>
+        </ul>
+
+        <h2>Authentication</h2>
+        <ul>
+            <li>OAuth for social logins.</li>
+            <li>JWT or session-based authentication.</li>
+        </ul>
+
+        <h2>Deployment</h2>
+        <ul>
+            <li>Use platforms like AWS, Heroku, or Vercel for hosting.</li>
+        </ul>
+
+        <h1>Optional Features for Enhanced User Experience</h1>
+        <ul>
+            <li>AI Recommendations: Suggest properties based on user preferences and history.</li>
+            <li>Virtual Tours: 360-degree property views.</li>
+            <li>Host Earnings Reports: Generate detailed reports for hosts.</li>
+            <li>Referral System: Incentivize users to invite others.</li>
+        </ul>
+    </div>
+</body>

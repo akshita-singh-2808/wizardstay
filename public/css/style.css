@@ -1,0 +1,241 @@
+html,body {
+    background-color:white!important;
+    height: 100%;
+    margin: 0;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100vh;
+
+}
+
+.custom-navbar{
+    height:5rem;
+
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-globe{
+    color:#005252;
+    font-size:2rem;
+}
+
+.custom-nav-link{
+    color: #000000 !important; 
+    margin-left: 1;
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    margin: 1rem;
+}
+
+.f-info-socials,.f-info-links,.f-info-brand{
+    font-size: 1rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.f-info-socials a:hover{
+    font-size: 1.4rem;
+}
+
+.fa-brands{
+    color:#ffffff;
+    margin-right:0.5rem;
+    vertical-align: middle;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+
+.f-info-links a:hover{
+text-decoration: underline;
+    
+}
+
+.f-info{
+    display: flex;
+    background-color: #433633;
+    color:white;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:space-evenly ;
+    text-align:center;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.card{
+    width: 100%;
+    overflow: hidden;
+    border: none !important;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: none !important;
+  
+
+}
+
+.card-img-top:hover{
+    opacity: 0.9;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent)
+}
+.card-body{
+    /* padding: 0 ; */
+   height: auto;
+   padding: 1rem !important;
+   border: none !important;
+   
+   
+}
+.card:hover .card-img-overlay {
+    opacity: 0.15;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
+}
+.card-text{
+    font-weight:400 ;
+    background-color: white;
+
+}
+
+.card-loc,.card-title{
+    text-decoration: none ;
+
+}
+
+.text{
+    text-decoration: none;
+}
+
+/* .card-loc{
+    color: rgb(94, 94, 234);
+} */
+.m-logo{
+    width:90px;
+    height:50px;
+}
+.btn{
+    background-color:#433633 !important;
+    color: white !important;
+}
+.cta{
+    background-color:#3B79C9 ;
+    color: #ffffff;
+    display: flex;
+    margin-bottom: 0;
+  
+}
+.cta1{
+    /* margin-left: 3rem; */
+    margin: 5rem;
+    margin-bottom: 0;
+    
+}
+
+
+.newContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex: 1; /* Allow the form container to take available space */
+    padding-bottom: 20px; 
+}
+.newContainer form{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.newContainer input{
+    width: 500px; /* Equal width for all input boxes and textarea */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.newContainer textarea{
+    width: 500px; /* Equal width for all input boxes and textarea */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+
+}
+.newContainer form button{
+   width: 4rem;
+   background-color: #084887;
+   color: white;
+ }
+
+.alert-danger{
+    height: auto;
+}
+.footer{
+    margin-top: auto !important;
+}
+.id-detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+
+}
+.id-btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.edit-btn{
+    background-color: orange;
+    color: black;
+    padding-right:.75rem;
+    padding-left: 0.7rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.75rem;
+    border-radius: .25rem;
+    border: none;
+  }
+  
+h4{
+    color: #3B79C9 !important;
+    
+}
+.yes-no{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card-img-top {
+    width: 100% !important;
+    aspect-ratio: 1 / 1;
+    height: 255px !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;
+}
