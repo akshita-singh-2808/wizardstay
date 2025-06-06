@@ -1,4 +1,4 @@
-# WanderStay
+# WizardStay
 
 WanderStay is an Airbnb-like web application that allows users to browse, book, and manage accommodations for their travels. The platform is designed to provide a seamless and user-friendly experience for both travelers and hosts.
 
