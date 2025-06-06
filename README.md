@@ -3,6 +3,12 @@
 WanderStay is an Airbnb-like web application that allows users to browse, book, and manage accommodations for their travels. The platform is designed to provide a seamless and user-friendly experience for both travelers and hosts.
 
 ![image alt](https://github.com/akshita-singh-2808/wizardstay/blob/main/Screenshot%202025-03-31%20235243.png?raw=true)
+![image alt](https://github.com/akshita-singh-2808/wizardstay/blob/main/Screenshot%202025-06-06%20225616.png)
+![image alt](https://github.com/akshita-singh-2808/wizardstay/blob/main/Screenshot%202025-06-06%20225759.png)
+![image alt](https://github.com/akshita-singh-2808/wizardstay/blob/main/Screenshot%202025-06-06%20225822.png)
+![image alt](https://github.com/akshita-singh-2808/wizardstay/blob/main/Screenshot%202025-06-06%20225834.png)
+![image alt](https://github.com/akshita-singh-2808/wizardstay/blob/main/Screenshot%202025-06-06%20230353.png)
+
 
 ## Features
 - **User Authentication**: Sign up, log in, and manage user profiles.
