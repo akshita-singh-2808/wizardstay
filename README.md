@@ -48,7 +48,7 @@ To set up and run WanderStay locally, follow these steps:
    ```
 
 5. **Open the application**:
-   Go to `http://localhost:3000` in your browser.
+   Go to `http://localhost:8080` in your browser.
 
 ## Usage
 - **Users**: Sign up, search for accommodations, book stays, and leave reviews.
